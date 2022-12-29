@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+}
+
+.sidemenu {
+  width: 280px;
+  padding: 10px;
+  background-color: #202123
+}
+
+.chatbox {
+  flex: 1;
+  background-color: #343541;
+  position: relative;
+}
+
+.side-menu-button {
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: left;
+  transition:ease 0.25s all;
+}
+
+.side-menu-button:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-menu-button span {
+  padding-left: 6px;
+  padding-right: 12px;
+}
+
+.chat-input-holder {
+  padding: 24px;
+  position: absolute;
+  bottom: 0; right: 0; left: 0;
+  height: 10%;
+}
+
+.chat-input-textarea {
+  background-color: #40414f;
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  font-size: 1.25em;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  resize: none;
+}
+
+.chat-log {
+  text-align: left;
+  overflow-y: auto;
+  top: 0;
+  height: 90%;
+  word-break: break-word;
+}
+
+.chat-message {
+  
+}
+
+.chat-message.chatgpt {
+  background-color: #444654;
+}
+
+.chat-message-center {
+  padding: 12px;
+  display: flex;
+  padding-left: 24px;
+  padding-right: 24px;
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: 15%;
+}
+
+.avatar {
+  background: white;
+  border-radius: 50%;
+  min-width: 41px;
+  height: 41px;
+}
+
+.avatar.chatgpt {
+  background: #0da37f;
+  border-radius: 50%;
+  width: 41px;
+  height: 41px;
+}
+
+.message {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.models-title {
+  text-align: left;
+  /* margin-left: 2px; */
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+.models select {
+  margin-top: 12px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 12px;
+  border: 1px solid white;
+  background-color: #202123;
+  color: white;
+}
+
+select option {
+  background-color: #202123;
+}
+
+/* Scroll bar customizing */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
